@@ -1,0 +1,54 @@
+{
+  "purpose": "僅供模擬更新偵測；不是 GitHub Release，不代表任何版本已發布。",
+  "tool": "orderflow",
+  "cases": [
+    {
+      "scenario": "newer",
+      "installed": "2.1.9",
+      "tag": "orderflow/v2.1.10",
+      "draft": false,
+      "prerelease": false,
+      "expected": "update"
+    },
+    {
+      "scenario": "same",
+      "installed": "2.1.9",
+      "tag": "orderflow/v2.1.9",
+      "draft": false,
+      "prerelease": false,
+      "expected": "no_update"
+    },
+    {
+      "scenario": "older",
+      "installed": "2.1.9",
+      "tag": "orderflow/v2.1.8",
+      "draft": false,
+      "prerelease": false,
+      "expected": "no_update"
+    },
+    {
+      "scenario": "other_tool",
+      "installed": "2.1.9",
+      "tag": "batchremarks/v2.2.5",
+      "draft": false,
+      "prerelease": false,
+      "expected": "ignore"
+    },
+    {
+      "scenario": "prerelease",
+      "installed": "2.1.9",
+      "tag": "orderflow/v9.0.0-beta",
+      "draft": false,
+      "prerelease": true,
+      "expected": "ignore"
+    },
+    {
+      "scenario": "draft",
+      "installed": "2.1.9",
+      "tag": "orderflow/v9.0.0",
+      "draft": true,
+      "prerelease": false,
+      "expected": "ignore"
+    }
+  ]
+}
