@@ -1,7 +1,7 @@
 {
   "tool": "orderflow",
-  "version": "2.1.9",
+  "version": "2.2.0",
   "url": null,
   "updatedAt": "2026-11-07",
-  "note": "isolated test feed; not a release"
+  "note": "simulation only; no release"
 }
