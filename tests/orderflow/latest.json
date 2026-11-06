@@ -1,7 +1,7 @@
 {
   "tool": "orderflow",
-  "version": "2.1.9",
+  "version": "2.2.0",
   "url": null,
   "updatedAt": "2026-11-07",
-  "note": "Baseline for notification integration test; simulated feed only"
+  "note": "Simulated newer version for passive notification test; not a release"
 }
